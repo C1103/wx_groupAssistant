@@ -1,0 +1,36 @@
+{
+    "pages": [
+        "pages/mine/mine",
+        "pages/index/index",
+        "pages/logs/logs"
+
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "群约助手",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "color": "#ccc",
+        "list": [{
+                "text": "群约",
+                "iconPath": "images/group.png",
+                "selectedIconPath": "images/group_active.png",
+                "pagePath": "pages/index/index"
+            },
+            {
+                "text": "",
+                "iconPath": "images/add.png",
+                "selectedIconPath": "images/add.png",
+                "pagePath": "pages/search/search"
+            },
+            {
+                "text": "我",
+                "iconPath": "images/me.png",
+                "selectedIconPath": "images/me_active.png",
+                "pagePath": "pages/mine/mine"
+            }
+        ]
+    }
+}
