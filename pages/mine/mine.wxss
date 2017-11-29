@@ -1,8 +1,8 @@
 /* pages/mine/mine.wxss */
 
-page{
-    height:100%;
-    background:#f9f9f9;
+page {
+    height: 100%;
+    background: #f9f9f9;
 }
 
 .container {
@@ -10,8 +10,8 @@ page{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    padding: 100rpx 0;
+    /* justify-content: space-between; */
+    padding: 90rpx 0;
     box-sizing: border-box;
 }
 
@@ -56,8 +56,8 @@ page{
     transform: rotate(45deg);
 }
 
-.item-style.no-ft:after{
-    display:none;
+.item-style.no-ft:after {
+    display: none;
 }
 
 .icon1 {
@@ -70,9 +70,9 @@ page{
 }
 
 .text1 {
-    color:#363c43;
+    color: #363c43;
     display: inline-block;
-    margin-left: 20rpx; 
+    margin-left: 20rpx;
     vertical-align: top;
 }
 
@@ -82,7 +82,6 @@ page{
     right: 70rpx;
     color: #888888;
 }
-
 
 .clock-time.right {
     right: 34rpx;

@@ -1,0 +1,15 @@
+<view class="swiper-tab">
+    <view class="swiper-tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="clickTab">默认提醒</view>
+    <view class="swiper-tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="clickTab">全天提醒</view>
+</view>
+
+<swiper current="{{currentTab}}" bindchange="swiperTab" duration="300" height="800rpx">
+    <swiper-item >
+        <view class="swiper-item  {{chooseTapOne==index?'swiper-item-active':''}}" wx:for="{{timeData_one}}" data-current="{{index}}" bindtap="clickTimeOne">
+            {{item}}
+        </view>
+    </swiper-item>
+    <swiper-item>
+        <view class="swiper-item {{chooseTapTwo==index?'swiper-item-active':''}}" wx:for="{{timeData_two}}" data-current="{{index}}" bindtap="clickTimeTwo" >{{item}}</view>
+    </swiper-item>
+</swiper>

@@ -10,12 +10,13 @@ Page({
         canIUse: wx.canIUse('button.open-type.getUserInfo')
     },
     //事件处理函数
-    bindViewTap: function() {
+    bindTimeTap: function() {
         wx.navigateTo({
-            url: '../logs/logs'
+            url: '../set_time/set_time',
         })
     },
     onLoad: function() {
+        // console.log(app.globalData.chooseTapOne);
         if (app.globalData.userInfo) {
             this.setData({
                 userInfo: app.globalData.userInfo,

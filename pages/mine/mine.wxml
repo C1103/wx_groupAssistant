@@ -5,22 +5,21 @@
   <view class="userinfo">
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
     <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
     </block>
   </view>
 </view>
 
-<navigator url="" redirect hover-class="className">
-    <view class="item-style">
+
+    <view class="item-style" bindtap="bindTimeTap">
         <image class="icon1" src="/images/img1.png"></image>
         <text class="text1">提醒设置</text>
         <view class="clock-time">
           <text class="clock-text">事件发生时，不提醒</text>
         </view>
     </view>
-</navigator>
-<navigator url="" redirect hover-class="className">
+
     <view class="item-style">
         <image class="icon1" src="../../images/img2.png"></image>
         <text class="text1">意见反馈</text>
@@ -28,8 +27,7 @@
           <text class="clock-text"></text>
         </view>
     </view>
-</navigator>
-<navigator url="" redirect hover-class="className">
+
     <view class="item-style no-ft">
         <image class="icon1" src="../../images/img3.png"></image>
         <text class="text1">当前版本</text>
@@ -37,8 +35,7 @@
           <text class="clock-text">1.2.3</text>
         </view>
     </view>
-</navigator>
-<navigator url="" redirect hover-class="className">
+
     <view class="item-style">
         <image class="icon1" src="../../images/img4.png"></image>
         <text class="text1">联系客服</text>
@@ -46,5 +43,5 @@
           <text class="clock-text"></text>
         </view>
     </view>
-</navigator>
+
 
