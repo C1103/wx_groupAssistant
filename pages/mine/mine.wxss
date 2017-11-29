@@ -60,7 +60,7 @@ page {
     display: none;
 }
 
-.icon1 {
+.icon {
     display: inline-block;
     /* background: black; */
     height: 40rpx;
@@ -69,7 +69,7 @@ page {
     margin-left: 30rpx;
 }
 
-.text1 {
+.text {
     color: #363c43;
     display: inline-block;
     margin-left: 20rpx;

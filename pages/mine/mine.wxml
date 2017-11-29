@@ -13,32 +13,32 @@
 
 
     <view class="item-style" bindtap="bindTimeTap">
-        <image class="icon1" src="/images/img1.png"></image>
-        <text class="text1">提醒设置</text>
+        <image class="icon" src="/images/img1.png"></image>
+        <text class="text">提醒设置</text>
         <view class="clock-time">
           <text class="clock-text">事件发生时，不提醒</text>
         </view>
     </view>
 
     <view class="item-style">
-        <image class="icon1" src="../../images/img2.png"></image>
-        <text class="text1">意见反馈</text>
+        <image class="icon" src="../../images/img2.png"></image>
+        <text class="text">意见反馈</text>
         <view class="clock-time">
           <text class="clock-text"></text>
         </view>
     </view>
 
     <view class="item-style no-ft">
-        <image class="icon1" src="../../images/img3.png"></image>
-        <text class="text1">当前版本</text>
+        <image class="icon" src="../../images/img3.png"></image>
+        <text class="text">当前版本</text>
         <view class="clock-time right">
           <text class="clock-text">1.2.3</text>
         </view>
     </view>
 
     <view class="item-style">
-        <image class="icon1" src="../../images/img4.png"></image>
-        <text class="text1">联系客服</text>
+        <image class="icon" src="../../images/img4.png"></image>
+        <text class="text">联系客服</text>
         <view class="clock-time">
           <text class="clock-text"></text>
         </view>

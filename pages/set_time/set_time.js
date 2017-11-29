@@ -38,6 +38,9 @@ Page({
         })
     },
     onLoad: function() {
+        wx.setNavigationBarTitle({
+            title: '提醒设置'
+        })
         var that = this;
         wx.request({
             url: 'http://www.easy-mock.com/mock/5a1e246e365fb14a83207162/first_time/Time',
