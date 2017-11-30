@@ -9,6 +9,8 @@ Page({
         hasUserInfo: false,
         canIUse: wx.canIUse('button.open-type.getUserInfo'),
         project: 0,
+        timeSetOne: '不提醒',
+        timeSetTwo: '不提醒',
     },
     //事件处理函数
     bindTimeTap: function() {
@@ -16,8 +18,32 @@ Page({
             url: '../set_time/set_time',
         })
     },
+    onShow: function() {
+        var that = this;
+        wx.getStorage({
+            key: 'setTimeOne',
+            success: function(res) {
+                console.log(res)
+                if (res.data.length > 0) {
+                    that.setData({
+                        timeSetOne: res.data,
+                    })
+                }
+            }
+        })
+        wx.getStorage({
+            key: 'setTimeTwo',
+            success: function(res) {
+                console.log(res)
+                if (res.data.length > 0) {
+                    that.setData({
+                        timeSetTwo: res.data,
+                    })
+                }
+            }
+        })
+    },
     onLoad: function() {
-        // console.log(app.globalData.chooseTapOne);
         if (app.globalData.userInfo) {
             this.setData({
                 userInfo: app.globalData.userInfo,

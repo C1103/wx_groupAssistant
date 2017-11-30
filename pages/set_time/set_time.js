@@ -25,9 +25,20 @@ Page({
     },
     clickTimeOne: function(e) {
         var index = e.target.dataset.current;
-        console.log(index);
+        console.log(this.data.timeData_one[index]);
         this.setData({
             chooseTapOne: index,
+        });
+        wx.setStorage({
+            key: 'setTimeOne',
+            data: this.data.timeData_one[index],
+            success: function() {
+                wx.showToast({
+                    title: '地址保存成功',
+                    icon: 'success',
+                    duration: 2000
+                })
+            }
         })
     },
     clickTimeTwo: function(e) {
@@ -35,6 +46,17 @@ Page({
         console.log(index);
         this.setData({
             chooseTapTwo: index,
+        });
+        wx.setStorage({
+            key: 'setTimeTwo',
+            data: this.data.timeData_two[index],
+            success: function() {
+                wx.showToast({
+                    title: '地址保存成功',
+                    icon: 'success',
+                    duration: 2000
+                })
+            }
         })
     },
     onLoad: function() {

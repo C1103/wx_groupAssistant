@@ -16,7 +16,7 @@
         <image class="icon" src="/images/img1.png"></image>
         <text class="text">提醒设置</text>
         <view class="clock-time">
-          <text class="clock-text">事件发生时，不提醒</text>
+          <text class="clock-text">{{timeSetOne}}，{{timeSetTwo}}</text>
         </view>
     </view>
 
