@@ -30,15 +30,14 @@ Page({
             chooseTapOne: index,
         });
         wx.setStorage({
+            key: 'chooseTapOne',
+            data: index,
+            success: function() {}
+        })
+        wx.setStorage({
             key: 'setTimeOne',
             data: this.data.timeData_one[index],
-            success: function() {
-                wx.showToast({
-                    title: '地址保存成功',
-                    icon: 'success',
-                    duration: 2000
-                })
-            }
+            success: function() {}
         })
     },
     clickTimeTwo: function(e) {
@@ -48,14 +47,36 @@ Page({
             chooseTapTwo: index,
         });
         wx.setStorage({
+            key: 'chooseTapTwo',
+            data: index,
+            success: function() {}
+        })
+        wx.setStorage({
             key: 'setTimeTwo',
             data: this.data.timeData_two[index],
-            success: function() {
-                wx.showToast({
-                    title: '地址保存成功',
-                    icon: 'success',
-                    duration: 2000
+            success: function() {}
+        })
+    },
+    onShow: function() {
+        var that = this;
+        wx.getStorage({
+            key: 'chooseTapOne',
+            success: function(res) {
+                console.log(res)
+                that.setData({
+                    chooseTapOne: res.data,
                 })
+
+            }
+        })
+        wx.getStorage({
+            key: 'chooseTapTwo',
+            success: function(res) {
+                console.log(res)
+                that.setData({
+                    chooseTapTwo: res.data,
+                })
+
             }
         })
     },
