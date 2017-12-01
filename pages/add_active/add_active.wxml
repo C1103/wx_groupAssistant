@@ -1,0 +1,35 @@
+<view class="page-hd">
+    <image src="../../images/pic1.png"></image>
+    <view class="image_btn page-flex"><text>更换模板</text></view>
+</view>
+<view class="page-bd">
+    <view class="page-bd_hd page-flex">
+        <input class="input" placeholder="请输入活动标题"/>
+        <image src="../../images/voice.png"></image>
+    </view>
+    <view class="page-bd_time page-flex">
+        <image src="../../images/bell.png"></image>
+        <text>开始时间</text>
+        <span>2017-11-27</span>
+        <span>23:30</span>
+    </view>
+    <view class="page-bd_active page-flex">
+        <text>全天活动</text>
+        <view class="btn {{btn?'btn_true':''}}"  bindtap="bindBtn"><view class="btn_btn {{btn?'btn_btn__true':'btn_btn__false'}}"></view></view>
+    </view>
+    <view class="page-bd_loaction page-flex">
+        <image src="../../images/location.png"></image>
+        <input type="text" placeholder="活动地点" />
+    </view>
+    <view class="page-bd_belltime page-flex">
+        <image src="../../images/bell.png"></image>
+        <text>提醒时间</text>
+        <span>1小时前</span>
+    </view>
+    <view class="page-bd_ft page-flex">
+        <text>更多选项</text>
+    </view>
+    <view class="page-ft page-flex">
+        <text>保存</text>
+    </view>
+</view>

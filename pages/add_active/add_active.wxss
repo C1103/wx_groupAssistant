@@ -1,0 +1,236 @@
+/* page {
+    padding: 0;
+    margin: 0;
+    height: 100%
+} */
+
+.page-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+text {
+    display: inline-block;
+    color: #353535;
+    font-size: 30rpx;
+}
+
+.page-bd image {
+    width: 36rpx;
+    height: 36rpx;
+    margin-left: 42rpx;
+    /* margin-top: 30rpx; */
+}
+
+
+/* 上面的都为复用样式 */
+
+page {
+    height: 100%;
+    width: 100%;
+    background-color: #f9f9f9;
+    position: relative;
+}
+
+.page-hd {
+    width: 100%;
+    height: 340rpx;
+    position: relative;
+}
+
+.page-hd image {
+    height: 100%;
+    width: 100%;
+}
+
+.page-hd .image_btn {
+    z-index: 2;
+    width: 132rpx;
+    height: 48rpx;
+    position: absolute;
+    right: 22rpx;
+    bottom: 18rpx;
+    border-radius: 25rpx;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    /* text-align: center; */
+}
+
+.page-hd .image_btn text {
+    color: #ffffff;
+    font-size: 22rpx;
+}
+
+.page-bd {
+    position: relative;
+}
+
+.page-bd_hd image {
+    position: absolute;
+    right: 0;
+    width: 66rpx;
+    height: 66rpx;
+}
+
+.page-bd_hd {
+    background-color: #ffffff;
+    width: 100%;
+    height: 146rpx;
+}
+
+.page-bd_hd input {
+    margin-left: 40rpx;
+}
+
+.page-bd_hd image {
+    z-index: 1;
+    display: inline-block;
+    margin-right: 30rpx;
+}
+
+.page-bd_time {
+    height: 100rpx;
+    width: 100%;
+    background-color: #ffffff;
+    border: 2rpx solid #f8f8f8;
+    border-bottom: transparent;
+    border-right: transparent;
+    border-left: transparent;
+    position: relative;
+}
+
+.page-bd_time text {
+    margin-left: 28rpx;
+}
+
+.page-bd_time span {
+    color: #888888;
+    font-size: 28rpx;
+}
+
+.page-bd_time span:nth-child(2n+1) {
+    position: absolute;
+    right: 208rpx;
+}
+
+.page-bd_time span:nth-child(2n) {
+    position: absolute;
+    right: 44rpx;
+}
+
+.page-bd_active {
+    width: 100%;
+    height: 100rpx;
+    margin-left: 106rpx;
+    border-bottom: 2rpx solid #f8f8f8;
+    /* position: relative; */
+}
+
+.btn {
+    /* position: absolute; */
+    width: 106rpx;
+    height: 62rpx;
+    border: 2rpx solid #dfdfdf;
+    border-radius: 35rpx;
+    margin-left: 380rpx;
+    position: relative;
+}
+
+.btn_true {
+    background-color: #f7614a;
+}
+
+.btn_btn {
+    width: 62rpx;
+    height: 62rpx;
+    border: 2rpx solid #d7d7d7;
+    border-radius: 35rpx;
+    position: absolute;
+    background-color: #ffffff;
+}
+
+.btn_btn__true {
+    right: 0;
+}
+
+.btn_btn__false {
+    left: 0;
+}
+
+.page-bd_loaction {
+    height: 100rpx;
+    width: 100%;
+}
+
+.page-bd_loaction input {
+    font-size: 30rpx;
+    margin-left: 30rpx;
+}
+
+.page-bd_belltime {
+    height: 100rpx;
+    width: 100%;
+    position: relative;
+}
+
+.page-bd_belltime:after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 16rpx;
+    height: 16rpx;
+    border: 1rpx solid #c8c8c8;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    transform: rotate(45deg);
+    right: 38rpx;
+}
+
+.page-bd_belltime text {
+    margin-left: 30rpx;
+}
+
+.page-bd_belltime span {
+    color: #888888;
+    font-size: 30rpx;
+    position: absolute;
+    right: 80rpx;
+}
+
+.page-bd_ft {
+    width: 100%;
+    height: 136rpx;
+    position: relative;
+}
+
+.page-bd_ft:after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 16rpx;
+    height: 16rpx;
+    border: 1rpx solid #c8c8c8;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    transform: rotate(45deg);
+    right: 34rpx;
+}
+
+.page-bd_ft text {
+    margin-left: 104rpx;
+}
+
+.page-ft {
+    width: 670rpx;
+    height: 94rpx;
+    background-color: #f8614a;
+    margin: 32rpx auto;
+    border-radius: 45rpx;
+    justify-content: center;
+}
+
+.page-ft text {
+    color: #ffffff;
+    font-size: 32rpx;
+}
