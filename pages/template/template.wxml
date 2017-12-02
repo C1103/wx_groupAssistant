@@ -1,5 +1,5 @@
-<view class="template-item">
-    <span class="title">游戏</span>
-    <view class="image-item"><image src='../../images/pic1.png' /></view>
-    <view class="image-item"><image src='../../images/pic2.png' /></view>
+<view class="template-item" wx:for{{pictures}}>
+    <span class="title">{{item.title}}</span>
+    <view class="image-item" bindtap="goToActivePage" data-current="{{2*index-1}}"><image src='{{item.picture_one}}' /></view>
+    <view class="image-item" bindtap="goToActivePage" data-current="{{2*index}}"><image src='{{item.picture_two}}' /></view>
 </view>
