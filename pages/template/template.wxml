@@ -1,0 +1,5 @@
+<view class="template-item">
+    <span class="title">游戏</span>
+    <view class="image-item"><image src='../../images/pic1.png' /></view>
+    <view class="image-item"><image src='../../images/pic2.png' /></view>
+</view>

@@ -1,0 +1,35 @@
+.template-item {
+    position: relative;
+    width: 690rpx;
+    height: 250rpx;
+    margin: 40rpx auto;
+}
+
+.template-item span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 36;
+}
+
+.template-item .image-item,
+.template-item .image-item image {
+    width: 336rpx;
+    height: 180rpx;
+}
+
+.template-item .image-item {
+    position: absolute;
+    border-radius: 10rpx;
+    overflow: hidden;
+}
+
+.template-item .image-item:nth-child(2n+1) {
+    left: 0;
+    bottom: 0;
+}
+
+.template-item .image-item:nth-child(2n) {
+    right: 0;
+    bottom: 0;
+}
