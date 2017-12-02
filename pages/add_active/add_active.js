@@ -2,6 +2,11 @@ Page({
     data: {
         btn: false,
     },
+    goToImagePage: function() {
+        wx.navigateTo({
+            url: '../set_time/set_time',
+        })
+    },
     bindBtn: function() {
         console.log(1214);
         var that = this

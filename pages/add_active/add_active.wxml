@@ -1,6 +1,6 @@
 <view class="page-hd">
     <image src="../../images/pic1.png"></image>
-    <view class="image_btn page-flex"><text>更换模板</text></view>
+    <view class="image_btn page-flex" bindtap="goToImagePage"><text>更换模板</text></view>
 </view>
 <view class="page-bd">
     <view class="page-bd_hd page-flex">
@@ -10,8 +10,8 @@
     <view class="page-bd_time page-flex">
         <image src="../../images/bell.png"></image>
         <text>开始时间</text>
-        <span>2017-11-27</span>
-        <span>23:30</span>
+        <span class="{{btn?'span-one_true':'span-one'}}">2017-11-27</span>
+        <span class="{{btn?'undisplay':'span-two'}}">23:30</span>
     </view>
     <view class="page-bd_active page-flex">
         <text>全天活动</text>
@@ -29,7 +29,8 @@
     <view class="page-bd_ft page-flex">
         <text>更多选项</text>
     </view>
-    <view class="page-ft page-flex">
+    
+</view>
+<view class="page-ft page-flex">
         <text>保存</text>
     </view>
-</view>
