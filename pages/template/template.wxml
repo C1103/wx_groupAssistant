@@ -1,5 +1,5 @@
-<view class="template-item" wx:for{{pictures}}>
+<view class="template-item" wx:for="{{pictures}}" wx:for-index="index">
     <span class="title">{{item.title}}</span>
-    <view class="image-item" bindtap="goToActivePage" data-current="{{2*index-1}}"><image src='{{item.picture_one}}' /></view>
-    <view class="image-item" bindtap="goToActivePage" data-current="{{2*index}}"><image src='{{item.picture_two}}' /></view>
+    <navigator url="../add_active/add_active?pageTitleImg={{item.picture_one}}" redirect='true' class="image-item"   ><image src='{{item.picture_one}}' /></navigator>
+    <navigator url="../add_active/add_active?pageTitleImg={{item.picture_two}}" redirect='true' class="image-item"  ><image src='{{item.picture_two}}' /></navigator>
 </view>
