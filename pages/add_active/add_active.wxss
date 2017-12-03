@@ -105,12 +105,12 @@ page {
     margin-left: 28rpx;
 }
 
-.page-bd_time span {
+span {
     color: #888888;
     font-size: 28rpx;
 }
 
-.page-bd_time .span-one {
+.span-one {
     position: absolute;
     right: 208rpx;
 }
@@ -120,12 +120,12 @@ page {
     right: 44rpx;
 }
 
-.page-bd_time .span-two {
+.span-two {
     position: absolute;
     right: 44rpx;
 }
 
-.page-bd_time .span-two:before {
+.span-two:before {
     content: '';
     /* left: 0; */
     /* position: relative;
@@ -138,8 +138,8 @@ page {
     margin-right: 48rpx;
 }
 
-.page-bd_active {
-    width: 100%;
+.page-bd_sbox {
+    width: 644rpx;
     height: 100rpx;
     margin-left: 106rpx;
     border-bottom: 2rpx solid #f8f8f8;
@@ -219,10 +219,11 @@ page {
 }
 
 .page-bd_ft {
-    width: 100%;
+    width: 644rpx;
     height: 100rpx;
     position: relative;
     margin-top: 20rpx;
+    margin-left: 106rpx;
 }
 
 .page-bd_ft:after {
@@ -238,8 +239,8 @@ page {
     right: 34rpx;
 }
 
-.page-bd_ft text {
-    margin-left: 104rpx;
+.page-bd_ft__foot:after {
+    transform: rotate(-135deg);
 }
 
 .page-ft {
@@ -254,4 +255,24 @@ page {
 .page-ft text {
     color: #ffffff;
     font-size: 32rpx;
+}
+
+.page-bd_more {
+    width: 100%;
+    height: 100rpx;
+    margin-top: 0;
+    border-bottom: 2rpx solid #f8f8f8
+}
+
+.page-bd_more text {
+    margin-left: 106rpx;
+}
+
+.page-bd_sbox span {
+    position: absolute;
+    right: 32rpx;
+}
+
+.page-bd_sbox .btnbtn {
+    margin-left: 260rpx;
 }

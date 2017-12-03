@@ -1,6 +1,6 @@
 <view class="page-hd">
-    <image src="../../images/pic1.png"></image>
-    <view class="image_btn page-flex" bindtap="goToImagePage"><text>更换模板</text></view>
+    <image src="{{imgUrl}}"></image>
+    <navigator url="../template/template" redirect="true" class="image_btn page-flex"><text>更换模板</text></navigator>
 </view>
 <view class="page-bd">
     <view class="page-bd_hd page-flex">
@@ -8,12 +8,12 @@
         <image src="../../images/voice.png"></image>
     </view>
     <view class="page-bd_time page-flex">
-        <image src="../../images/bell.png"></image>
+        <image src="../../images/clock.png"></image>
         <text>开始时间</text>
         <span class="{{btn?'span-one_true':'span-one'}}">2017-11-27</span>
         <span class="{{btn?'undisplay':'span-two'}}">23:30</span>
     </view>
-    <view class="page-bd_active page-flex">
+    <view class="page-bd_sbox page-flex">
         <text>全天活动</text>
         <view class="btn {{btn?'btn_true':''}}"  bindtap="bindBtn"><view class="btn_btn {{btn?'btn_btn__true':'btn_btn__false'}}"></view></view>
     </view>
@@ -21,15 +21,30 @@
         <image src="../../images/location.png"></image>
         <input type="text" placeholder="活动地点" />
     </view>
-    <view class="page-bd_belltime page-flex">
+    <view class="page-bd_belltime page-flex" bindtap="changeTime">
         <image src="../../images/bell.png"></image>
         <text>提醒时间</text>
-        <span>1小时前</span>
+        <span class="{{btn?'undisplay':''}}">{{timeSetOne}}</span>
+        <span class="{{btn?'':'undisplay'}}">{{timeSetTwo}}</span>
     </view>
-    <view class="page-bd_ft page-flex">
+    <view class="page-bd_ft page-flex {{moreBtn?'page-bd_ft__foot':''}}" bindtap="showMore">
         <text>更多选项</text>
     </view>
-    
+    <view class="{{moreBtn?'':'undisplay'}}">
+    <view class="page-bd_more page-flex">
+        <text>结束时间</text>
+        <span class="span-one">2017-11-27</span>
+        <span class="span-two">23:30</span>
+    </view>
+    <view class="page-bd_sbox page-flex">
+        <text>时区</text>
+        <span>Asia/Shanghai</span>
+    </view>
+    <view class="page-bd_sbox page-flex">
+        <text>用户报名填写信息</text>
+        <view class="btn btnbtn"><view class="btn_btn}}"></view></view>
+    </view>
+    </view>
 </view>
 <view class="page-ft page-flex">
         <text>保存</text>
