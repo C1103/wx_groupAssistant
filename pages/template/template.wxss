@@ -24,12 +24,12 @@
     overflow: hidden;
 }
 
-.template-item .image-item:nth-child(2n+1) {
+.template-item .image-item:nth-child(2n) {
     left: 0;
     bottom: 0;
 }
 
-.template-item .image-item:nth-child(2n) {
+.template-item .image-item:nth-child(2n+1) {
     right: 0;
     bottom: 0;
 }
