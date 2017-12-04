@@ -1,10 +1,40 @@
 Page({
     data: {
+        startDates: '2017-12-01',
+        startTimes: '12:00',
+        endDates: '2017-12-08',
+        endTimes: '12:00',
         btn: false,
         imgUrl: '../../images/pic6.png',
         timeSetOne: '',
         timeSetTwo: '',
         moreBtn: false
+    },
+    bindStartTimeChange: function(e) {
+        console.log("谁哦按")
+        this.setData({
+            startTimes: e.detail.value
+        })
+    },
+    //  点击日期组件确定事件  
+    bindStartDateChange: function(e) {
+        console.log(e.detail.value)
+        this.setData({
+            startDates: e.detail.value
+        })
+    },
+    bindEndTimeChange: function(e) {
+        console.log("谁哦按")
+        this.setData({
+            endTimes: e.detail.value
+        })
+    },
+    //  点击日期组件确定事件  
+    bindEndDateChange: function(e) {
+        console.log(e.detail.value)
+        this.setData({
+            endDates: e.detail.value
+        })
     },
     showMore: function() {
         console.log(this.data.moreBtn);

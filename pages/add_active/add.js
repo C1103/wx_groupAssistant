@@ -1,13 +1,27 @@
 Page({
+    data: {
+        num: 0,
+    },
     onLoad: function() {
-        wx.navigateTo({
-            url: './add_active'
-        })
+        if (this.data.num == 0) {
+            this.data.num++;
+            wx.navigateTo({
+                url: './add_active'
+            })
+        }
+        console.log(this.data.num)
     },
     onShow: function() {
-        console.log(8989);
-        wx.navigateTo({
-            url: '../index/index'
-        })
+        if (this.data.num != 0) {
+            this.data.num--;
+        } else {
+            wx.navigateTo({
+                url: '../index/index'
+            })
+        }
+        console.log(this.data.num);
+    },
+    onHide: function() {
+
     }
 })

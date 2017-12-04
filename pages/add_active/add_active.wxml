@@ -10,8 +10,21 @@
     <view class="page-bd_time page-flex">
         <image src="../../images/clock.png"></image>
         <text>开始时间</text>
-        <span class="{{btn?'span-one_true':'span-one'}}">2017-11-27</span>
-        <span class="{{btn?'undisplay':'span-two'}}">23:30</span>
+        <span class="{{btn?'span-one_true':'span-one'}}">
+        <picker mode="date" value="{{date}}" start="1978-01-01" end="2017-1-23" bindchange="bindStartDateChange">  
+        <view class="picker">
+        {{startDates}}  
+        </view>  
+        </picker> 
+        </span>
+        <span class="{{btn?'undispaly':'span-zero'}}"></span>
+        <span class="{{btn?'undisplay':'span-two'}}">
+        <picker mode="time" value="{{time}}" start="00:00" end="23:59" bindchange="bindStartTimeChange">  
+        <view class="picker"> 
+        {{startTimes}}
+        </view>  
+        </picker>
+        </span>
     </view>
     <view class="page-bd_sbox page-flex">
         <text>全天活动</text>
@@ -33,10 +46,23 @@
     <view class="{{moreBtn?'':'undisplay'}}">
     <view class="page-bd_more page-flex">
         <text>结束时间</text>
-        <span class="span-one">2017-11-27</span>
-        <span class="span-two">23:30</span>
+        <span class="{{btn?'span-one_true':'span-one'}}">
+        <picker mode="date" value="{{date}}" start="1978-01-01" end="2017-1-23" bindchange="bindEndDateChange">  
+        <view class="picker">
+        {{endDates}}  
+        </view>  
+        </picker> 
+        </span>
+        <span class="{{btn?'undispaly':'span-zero'}}"></span>
+        <span class="{{btn?'undisplay':'span-two'}}">
+        <picker mode="time" value="{{time}}" start="00:00" end="23:59" bindchange="bindEndTimeChange">  
+        <view class="picker"> 
+        {{endTimes}}
+        </view>  
+        </picker>
+        </span>
     </view>
-    <view class="page-bd_sbox page-flex">
+    <view class="page-bd_sbox page-flex {{btn?'undisplay':''}}">
         <text>时区</text>
         <span>Asia/Shanghai</span>
     </view>
