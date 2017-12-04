@@ -5,7 +5,7 @@ Page({
     onLoad: function() {
         if (this.data.num == 0) {
             this.data.num++;
-            wx.navigateTo({
+            wx.redirectTo({
                 url: './add_active'
             })
         }

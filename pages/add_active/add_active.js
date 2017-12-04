@@ -1,5 +1,6 @@
 Page({
     data: {
+        inputValue: '',
         startDates: '2017-12-01',
         startTimes: '12:00',
         endDates: '2017-12-08',
@@ -9,6 +10,29 @@ Page({
         timeSetOne: '',
         timeSetTwo: '',
         moreBtn: false
+    },
+    bindInput: function(e) {
+        console.log(e.detail.value);
+        this.setData({
+            inputValue: e.detail.value,
+        });
+    },
+    bindSaveData: function() {
+        var activeData = { startDatas: this.data.startDates, startTimes: this.data.startTimes, endDatas: this.data.endDates, endTimes: this.data.endTimes, active: this.data.inputValue, imgUrl: thia.data.imgUrl };
+        wx.showLoading({
+            title: '加载中',
+        })
+        wx.setStorage({
+            key: 'activeData',
+            data: activeData,
+            success: function() {
+                wx.hideToast();
+            }
+        })
+        console.log(activeData);
+        wx.redirectTo({
+            url: '../active_detail/active_detail?',
+        })
     },
     bindStartTimeChange: function(e) {
         console.log("谁哦按")

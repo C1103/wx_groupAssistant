@@ -1,13 +1,10 @@
-/* page {
-    padding: 0;
-    margin: 0;
-    height: 100%
-} */
-
 .page-flex {
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 100%;
+    height: 100rpx;
+    background-color: #ffffff;
 }
 
 text {
@@ -20,7 +17,6 @@ text {
     width: 36rpx;
     height: 36rpx;
     margin-left: 42rpx;
-    /* margin-top: 30rpx; */
 }
 
 
@@ -54,7 +50,6 @@ page {
     border-radius: 25rpx;
     background: rgba(0, 0, 0, 0.7);
     justify-content: center;
-    /* text-align: center; */
 }
 
 .page-hd .image_btn text {
@@ -90,9 +85,6 @@ page {
 }
 
 .page-bd_time {
-    height: 100rpx;
-    width: 100%;
-    background-color: #ffffff;
     border-top: 2rpx solid #f8f8f8;
     position: relative;
 }
@@ -128,42 +120,11 @@ span {
     border: 1rpx solid #e6e6e6;
 }
 
-
-/* .span-two:before {
-    content: ''; */
-
-
-/* left: 0; */
-
-
-/* position: relative;
-    top: 0; */
-
-
-/* bottom: 10rpx; */
-
-
-/* margin-bottom: 10rpx; */
-
-
-/* border: 1rpx solid #e6e6e6;
-    transform: scaleX(0.5);
-    transform-origin: 100% 100%;
-    margin-right: 48rpx;
-    top: 0;
-    bottom: 0;
-} */
-
-.page-bd_sbox {
-    width: 644rpx;
-    height: 100rpx;
+.page-bd_sbox text {
     margin-left: 106rpx;
-    border-bottom: 2rpx solid #f8f8f8;
-    /* position: relative; */
 }
 
 .btn {
-    /* position: absolute; */
     width: 106rpx;
     height: 62rpx;
     border: 2rpx solid #dfdfdf;
@@ -195,8 +156,6 @@ span {
 
 .page-bd_loaction {
     margin-top: 20rpx;
-    height: 100rpx;
-    width: 100%;
 }
 
 .page-bd_loaction input {
@@ -205,8 +164,6 @@ span {
 }
 
 .page-bd_belltime {
-    height: 100rpx;
-    width: 100%;
     position: relative;
 }
 
@@ -235,10 +192,11 @@ span {
 }
 
 .page-bd_ft {
-    width: 644rpx;
-    height: 100rpx;
     position: relative;
     margin-top: 20rpx;
+}
+
+.page-bd_ft text {
     margin-left: 106rpx;
 }
 
@@ -273,12 +231,11 @@ span {
     font-size: 32rpx;
 }
 
-.page-bd_more {
-    width: 100%;
-    height: 100rpx;
+
+/* .page-bd_more {
     margin-top: 0;
     border-bottom: 2rpx solid #f8f8f8
-}
+} */
 
 .page-bd_more text {
     margin-left: 106rpx;
@@ -295,4 +252,18 @@ span {
 
 .undisplay {
     display: none;
+}
+
+.short {
+    position: relative;
+}
+
+.short:before {
+    content: '';
+    position: absolute;
+    left: 106rpx;
+    top: 0;
+    right: 0;
+    border-top: 2rpx solid #f8f8f8;
+    transform-origin: 100% 0;
 }

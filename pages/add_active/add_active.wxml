@@ -4,7 +4,7 @@
 </view>
 <view class="page-bd">
     <view class="page-bd_hd page-flex">
-        <input class="input" placeholder="请输入活动标题"/>
+        <input class="input" placeholder="请输入活动标题" bindinput="bindInput"/>
         <image src="../../images/voice.png"></image>
     </view>
     <view class="page-bd_time page-flex">
@@ -26,7 +26,7 @@
         </picker>
         </span>
     </view>
-    <view class="page-bd_sbox page-flex">
+    <view class="page-bd_sbox page-flex short">
         <text>全天活动</text>
         <view class="btn {{btn?'btn_true':''}}"  bindtap="bindBtn"><view class="btn_btn {{btn?'btn_btn__true':'btn_btn__false'}}"></view></view>
     </view>
@@ -34,7 +34,7 @@
         <image src="../../images/location.png"></image>
         <input type="text" placeholder="活动地点" />
     </view>
-    <view class="page-bd_belltime page-flex" bindtap="changeTime">
+    <view class="page-bd_belltime page-flex short" bindtap="changeTime">
         <image src="../../images/bell.png"></image>
         <text>提醒时间</text>
         <span class="{{btn?'undisplay':''}}">{{timeSetOne}}</span>
@@ -44,7 +44,7 @@
         <text>更多选项</text>
     </view>
     <view class="{{moreBtn?'':'undisplay'}}">
-    <view class="page-bd_more page-flex">
+    <view class="page-bd_more page-flex short">
         <text>结束时间</text>
         <span class="{{btn?'span-one_true':'span-one'}}">
         <picker mode="date" value="{{date}}" start="1978-01-01" end="2017-1-23" bindchange="bindEndDateChange">  
@@ -62,16 +62,16 @@
         </picker>
         </span>
     </view>
-    <view class="page-bd_sbox page-flex {{btn?'undisplay':''}}">
+    <view class="page-bd_sbox page-flex short {{btn?'undisplay':''}}">
         <text>时区</text>
         <span>Asia/Shanghai</span>
     </view>
-    <view class="page-bd_sbox page-flex">
+    <view class="page-bd_sbox page-flex short">
         <text>用户报名填写信息</text>
         <view class="btn btnbtn"><view class="btn_btn}}"></view></view>
     </view>
     </view>
 </view>
-<view class="page-ft page-flex">
+<view class="page-ft page-flex" bindtap="bindSaveData">
         <text>保存</text>
     </view>
