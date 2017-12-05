@@ -1,0 +1,14 @@
+<image class="hdImage" src="{{data.imgUrl}}" />
+<view class="content"><image class="words" src="../../images/letWord.png"></image><span>写留言</span></view>
+<view class="ft">
+<image src="../../images/detailWrite.png"></image>
+<span>编辑</span>
+<view class="shu"></view>
+<image src="../../images/detailAdd.png"></image>
+<span>邀请好友</span>
+</view>
+<view class="detail">
+<span class="span-one">{{data.active}}</span>
+<view class="time"><image src="../../images/detailClock.png"></image><span>{{data.startDates}}{{data.startTimes}}-{{data.endTimes}}</span></view>
+<view class="member"><image src="../../images/detailMember.png"></image><span>1人报名,0人观望</span></view>
+</view>

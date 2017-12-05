@@ -1,0 +1,103 @@
+page {
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.hdImage {
+    height: 400rpx;
+    width: 100%
+}
+
+.content {
+    height: 694rpx;
+    width: 100%;
+    /* margin-bottom: 112rpx; */
+    position: relative;
+}
+
+.content span {
+    /* z-index: 2; */
+    font-size: 30rpx;
+    color: #f8614a;
+    position: absolute;
+    top: 240rpx;
+    right: 30rpx;
+}
+
+.words {
+    width: 100%;
+    height: 400rpx;
+    position: absolute;
+    bottom: 0;
+}
+
+.ft {
+    width: 100%;
+    height: 112rpx;
+    border-top: 2rpx solid #f8f8f8;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.ft image {
+    margin-left: 112rpx;
+    height: 44rpx;
+    width: 44rpx;
+}
+
+.ft image:nth-child(2n) {
+    margin-left: 76rpx;
+}
+
+.ft .shu {
+    margin-left: 120rpx;
+    height: 40rpx;
+    border-left: 2rpx solid black;
+}
+
+.ft span {
+    margin-left: 26rpx;
+}
+
+.detail {
+    z-index: 8;
+    position: absolute;
+    left: 30rpx;
+    top: 340rpx;
+    width: 692rpx;
+    height: 266rpx;
+    border-radius: 20rpx;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* padding: 30rpx; */
+    /* padding-left: 30rpx; */
+    /* align-items: center; */
+}
+
+.detail .span-one {
+    font-weight: 700;
+    margin: 30rpx;
+}
+
+.detail image {
+    height: 44rpx;
+    width: 44rpx;
+}
+
+.time {
+    margin-left: 30rpx;
+    font-weight: 300;
+    display: flex;
+    flex-direction: row;
+}
+
+.member {
+    font-weight: 300;
+    margin: 30rpx;
+    display: flex;
+    flex-direction: row;
+}
