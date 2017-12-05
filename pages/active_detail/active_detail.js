@@ -1,6 +1,7 @@
 Page({
     data: {
         data: null,
+        userInfo: {}
     },
     onLoad: function() {
         // console.log(res.data);

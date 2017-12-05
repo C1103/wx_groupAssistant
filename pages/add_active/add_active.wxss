@@ -117,7 +117,7 @@ span {
     position: absolute;
     right: 156rpx;
     height: 30rpx;
-    border: 1rpx solid #e6e6e6;
+    border-left: 2rpx solid #f8f8f8;
 }
 
 .page-bd_sbox text {

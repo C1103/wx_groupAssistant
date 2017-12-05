@@ -54,7 +54,7 @@ page {
 .ft .shu {
     margin-left: 120rpx;
     height: 40rpx;
-    border-left: 2rpx solid black;
+    border-left: 2rpx solid #e6e6e6;
 }
 
 .ft span {
@@ -100,4 +100,5 @@ page {
     margin: 30rpx;
     display: flex;
     flex-direction: row;
+    align-items: center;
 }

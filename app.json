@@ -1,9 +1,10 @@
 {
-    "pages": [
+    "pages": ["pages/index/index",
         "pages/add_active/add_active",
+        "pages/template/template",
         "pages/mine/mine",
         "pages/add_active/add",
-        "pages/index/index",
+        "pages/active_detail/active_detail",
         "pages/set_time/set_time",
         "pages/logs/logs"
     ],
@@ -22,7 +23,7 @@
                 "pagePath": "pages/index/index"
             },
             {
-                "text": "",
+
                 "iconPath": "images/add.png",
                 "selectedIconPath": "images/add.png",
                 "pagePath": "pages/add_active/add"

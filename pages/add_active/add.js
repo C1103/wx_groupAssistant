@@ -3,13 +3,13 @@ Page({
         num: 0,
     },
     onLoad: function() {
-        if (this.data.num == 0) {
-            this.data.num++;
-            wx.redirectTo({
+        // if (this.data.num == 0) {
+        //     this.data.num++;
+        wx.navigateTo({
                 url: './add_active'
             })
-        }
-        console.log(this.data.num)
+            // }
+            // console.log(this.data.num)
     },
     onShow: function() {
         if (this.data.num != 0) {

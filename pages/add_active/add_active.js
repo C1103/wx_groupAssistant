@@ -18,7 +18,7 @@ Page({
         });
     },
     bindSaveData: function() {
-        var activeData = { startDatas: this.data.startDates, startTimes: this.data.startTimes, endDatas: this.data.endDates, endTimes: this.data.endTimes, active: this.data.inputValue, imgUrl: thia.data.imgUrl };
+        var activeData = { startDatas: this.data.startDates, startTimes: this.data.startTimes, endDatas: this.data.endDates, endTimes: this.data.endTimes, active: this.data.inputValue, imgUrl: this.data.imgUrl };
         wx.showLoading({
             title: '加载中',
         })
@@ -31,7 +31,7 @@ Page({
         })
         console.log(activeData);
         wx.redirectTo({
-            url: '../active_detail/active_detail?',
+            url: '../active_detail/active_detail',
         })
     },
     bindStartTimeChange: function(e) {

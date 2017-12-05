@@ -9,6 +9,6 @@
 </view>
 <view class="detail">
 <span class="span-one">{{data.active}}</span>
-<view class="time"><image src="../../images/detailClock.png"></image><span>{{data.startDates}}{{data.startTimes}}-{{data.endTimes}}</span></view>
+<view class="time"><image src="../../images/detailClock.png"></image><span>{{data.startDatas}} {{data.startTimes}}-{{data.endTimes}}</span></view>
 <view class="member"><image src="../../images/detailMember.png"></image><span>1人报名,0人观望</span></view>
 </view>
