@@ -17,11 +17,30 @@ Page({
             inputValue: e.detail.value,
         });
     },
+    addActive: function(act) {
+        wx.getStorage({
+            key: 'actives',
+            success: function(res) {
+                wx.setStorage({
+                    key: 'actives',
+                    data: [...res.data, act],
+                })
+            },
+            fail: function() {
+                wx.setStorage({
+                    key: 'actives',
+                    data: [act],
+                })
+            }
+        })
+    },
     bindSaveData: function() {
         var activeData = { startDatas: this.data.startDates, startTimes: this.data.startTimes, endDatas: this.data.endDates, endTimes: this.data.endTimes, active: this.data.inputValue, imgUrl: this.data.imgUrl };
         wx.showLoading({
-            title: '加载中',
-        })
+                title: '加载中',
+            })
+            // 储存到活动列表
+        this.addActive(activeData);
         wx.setStorage({
             key: 'activeData',
             data: activeData,
@@ -76,6 +95,9 @@ Page({
         // console.log(111);
     },
     onLoad: function(options) {
+        wx.setNavigationBarTitle({
+            title: '发起群约'
+        })
         if (options.pageTitleImg) {
             this.setData({
                 imgUrl: options.pageTitleImg

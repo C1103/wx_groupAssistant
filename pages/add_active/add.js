@@ -5,21 +5,22 @@ Page({
     onLoad: function() {
         // if (this.data.num == 0) {
         //     this.data.num++;
-        wx.navigateTo({
-                url: './add_active'
-            })
-            // }
-            // console.log(this.data.num)
+
+
+        // }
+        // console.log(this.data.num)
     },
     onShow: function() {
-        if (this.data.num != 0) {
-            this.data.num--;
+        this.data.num++;
+        if (this.data.num % 2 == 0) {
+            wx.switchTab({
+                url: '../index/index'
+            });
         } else {
             wx.navigateTo({
-                url: '../index/index'
+                url: './add_active'
             })
         }
-        console.log(this.data.num);
     },
     onHide: function() {
 
