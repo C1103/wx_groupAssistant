@@ -11,7 +11,7 @@
         <image src="../../images/clock.png"></image>
         <text>开始时间</text>
         <span class="{{btn?'span-one_true':'span-one'}}">
-        <picker mode="date" value="{{date}}" start="1978-01-01" end="2017-1-23" bindchange="bindStartDateChange">  
+        <picker mode="date" value="{{date}}" start="1978-01-01" end="2017-12-23" bindchange="bindStartDateChange">  
         <view class="picker">
         {{startDates}}  
         </view>  
@@ -47,7 +47,7 @@
     <view class="page-bd_more page-flex short">
         <text>结束时间</text>
         <span class="{{btn?'span-one_true':'span-one'}}">
-        <picker mode="date" value="{{date}}" start="1978-01-01" end="2017-1-23" bindchange="bindEndDateChange">  
+        <picker mode="date" value="{{date}}" start="1978-01-01" end="2017-12-23" bindchange="bindEndDateChange">  
         <view class="picker">
         {{endDates}}  
         </view>  
