@@ -32,12 +32,10 @@ Page({
         wx.setStorage({
             key: 'chooseTapOne',
             data: index,
-            success: function() {}
         })
         wx.setStorage({
             key: 'setTimeOne',
             data: this.data.timeData_one[index],
-            success: function() {}
         })
     },
     clickTimeTwo: function(e) {
@@ -49,12 +47,10 @@ Page({
         wx.setStorage({
             key: 'chooseTapTwo',
             data: index,
-            success: function() {}
         })
         wx.setStorage({
             key: 'setTimeTwo',
             data: this.data.timeData_two[index],
-            success: function() {}
         })
     },
     onShow: function() {

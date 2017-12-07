@@ -18,6 +18,7 @@ image {
     width: 586rpx;
     font-size: 0;
     box-shadow: 0rpx 4rpx 8rpx #e8e8e8;
+    overflow:hidden;
 }
 
 .info image {
