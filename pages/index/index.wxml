@@ -1,14 +1,14 @@
 <image wx:if="{{show==false}}"src="../../images/index.png" />
 
 <view wx:elif="{{show==true}}">
-<!-- <view class="start">以下为历史记录</view> -->
+<view class="start"><span>以下为历史记录</span></view>
 <view class="info" wx:for="{{activeInfo}}">
     <image src="{{item.imgUrl}}"></image>
     <view class="active">
         <span class="title">{{item.active}}</span>
-        <span>时间: {{item.startTimes}} - {{item.endTimes}}</span>
+        <span>时间: {{item.startDatas}} {{item.startTimes}} - {{item.endTimes}}</span>
         <span>人数: 1人报名</span>
     </view>
 </view>
-<!-- <view class="end">没有更多了</view> -->
+<view class="start end"><span>没有更多了</span></view>
 </view>
