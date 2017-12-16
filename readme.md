@@ -160,6 +160,7 @@ onShow: function() {
 下方的tabBar，最终解决方式是采用自定义tabBar或使用一个中间页面当做过度页面再跳转至发起活动页面
 
 ### 其他
+<hr>
 如果对该项目有兴趣的，可以进入个人[github](https://github.com/C1103/wx_groupAssistant)获取源代码看看，
 当然可以顺带给个star。
 
