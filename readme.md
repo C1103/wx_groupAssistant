@@ -73,6 +73,7 @@ onShow: function() {
 ### 2.首页前后显示效果
 使用`wx:if="{{show==false}}" wx:elif="{{show==true}}`，当没有活动时在app.js中设置数据`show`为`false`，有时设置为`true`
 来实现显示不同页面效果
+
 ![](https://user-gold-cdn.xitu.io/2017/12/16/1605fb5273071071?w=289&h=504&f=gif&s=129360)
 > wxml代码如下
 
@@ -100,6 +101,7 @@ onShow: function() {
 
 使用页面跳转传递参数设置活动主题图片，输入活动标题，使用`picker`组件设置活动开始时间结束时间，
 按钮设置采用三元运算符来给组件附加不同的样式，达到按钮状态不同时，显示不同。
+
 ![](https://user-gold-cdn.xitu.io/2017/12/16/1605fc2fc673e317?w=289&h=504&f=gif&s=900625)
 > wxml部分代码如下
 
@@ -129,6 +131,7 @@ onShow: function() {
 ### 4.用户个人设置效果展示
 高度还原原版效果，设置提醒时间，给每个`item`附加一个样式表现为红勾，当被选中时，采用数
 据绑定设置样式`display`为`block`就显示出来了,提醒设置页面头部的tab也是同样的方法实现。
+
 ![](https://user-gold-cdn.xitu.io/2017/12/16/1605fd008588fc04?w=289&h=504&f=gif&s=112261)
 
 > 页面代码展示
