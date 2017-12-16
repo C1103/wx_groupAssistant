@@ -1,4 +1,6 @@
-<image wx:if="{{show==false}}"src="../../images/index.png" />
+<view class="indexImg"  wx:if="{{show==false}}">
+<image src="../../images/index.png" />
+</view>
 
 <view wx:elif="{{show==true}}">
 <view class="start"><span>以下为历史记录</span></view>

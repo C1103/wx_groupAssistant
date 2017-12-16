@@ -3,12 +3,6 @@ Page({
         num: 0,
     },
     onLoad: function() {
-        // if (this.data.num == 0) {
-        //     this.data.num++;
-
-
-        // }
-        // console.log(this.data.num)
     },
     onShow: function() {
         this.data.num++;
@@ -23,6 +17,5 @@ Page({
         }
     },
     onHide: function() {
-
     }
 })

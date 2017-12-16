@@ -14,24 +14,24 @@
         "navigationBarTitleText": "群约助手",
         "navigationBarTextStyle": "black"
     },
-    "tabBar": {
-        "color": "#ccc",
+    "tabBar":{
+        "color": "#bfbfbf",
+        "selectedColor":"#515151",
         "list": [{
                 "text": "群约",
-                "iconPath": "images/group.png",
-                "selectedIconPath": "images/group_active.png",
+                "iconPath": "images/盒子.png",
+                "selectedIconPath": "images/盒子 (1).png",
                 "pagePath": "pages/index/index"
             },
             {
-
                 "iconPath": "images/add.png",
                 "selectedIconPath": "images/add.png",
                 "pagePath": "pages/add_active/add"
             },
             {
                 "text": "我",
-                "iconPath": "images/me.png",
-                "selectedIconPath": "images/me_active.png",
+                "iconPath": "images/我.png",
+                "selectedIconPath": "images/我的.png",
                 "pagePath": "pages/mine/mine"
             }
         ]
