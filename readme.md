@@ -1,6 +1,3 @@
-# 周末，让我们一起约嗨吧！
-
-
 周末了，暖被窝把你亲密拥抱，软沙发与你零距离接触，电脑电视成为亲密伙伴
 ，吃吃睡睡成为你的美好享受。朋友，别宅在家里，群约助手带你一起happy。
 
@@ -144,12 +141,10 @@ onShow: function() {
 
 <swiper current="{{currentTab}}" bindchange="swiperTab" duration="300" height="800rpx">
     <swiper-item >
-        <view class="swiper-item  {{chooseTapOne==index?'swiper-item-active':''}}" wx:for="{{timeData_one}}" data-current="{{index}}" bindtap="clickTimeOne">
-            {{item}}
-        </view>
+        <view class="swiper-item  {{chooseTapOne==index?'swiper-item-active':''}}" wx:for="{{timeData_one}}" data-current="{{index}}" bindtap="clickTimeOne">{{item}}</view>
     </swiper-item>
     <swiper-item>
-        <view class="swiper-item {{chooseTapTwo==index?'swiper-item-active':''}}" wx:for="{{timeData_two}}" data-current="{{index}}" bindtap="clickTimeTwo" >{{item}}</view>
+        <view class="swiper-item {{chooseTapTwo==index?'swiper-item-active':''}}" wx:for="{{timeData_two}}" data-current="{{index}}" bindtap="clickTimeTwo">{{item}}</view>
     </swiper-item>
 </swiper>
 ```
@@ -159,9 +154,5 @@ onShow: function() {
 在做项目工程中遇到最大的阻碍就是首页跳转到发起活动页面的跳转问题，使用下方tabBar跳转到页面并隐藏
 下方的tabBar，最终解决方式是采用自定义tabBar或使用一个中间页面当做过度页面再跳转至发起活动页面
 
-### 其他
-<hr>
-如果对该项目有兴趣的，可以进入个人[github](https://github.com/C1103/wx_groupAssistant)获取源代码看看，
-当然可以顺带给个star。
 
 
