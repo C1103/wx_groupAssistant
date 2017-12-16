@@ -19,8 +19,8 @@
         "selectedColor":"#515151",
         "list": [{
                 "text": "群约",
-                "iconPath": "images/盒子.png",
-                "selectedIconPath": "images/盒子 (1).png",
+                "iconPath": "images/active.png",
+                "selectedIconPath": "images/active_selected.png",
                 "pagePath": "pages/index/index"
             },
             {
@@ -30,8 +30,8 @@
             },
             {
                 "text": "我",
-                "iconPath": "images/我.png",
-                "selectedIconPath": "images/我的.png",
+                "iconPath": "images/user.png",
+                "selectedIconPath": "images/user_selected.png",
                 "pagePath": "pages/mine/mine"
             }
         ]

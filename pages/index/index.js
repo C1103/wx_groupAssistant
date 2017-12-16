@@ -2,9 +2,6 @@ Page({
     data: {
         activeInfo: [],
         show: false,
-        a: {
-            b: 0
-        }
     },
     onLoad: function() {
         wx.clearStorage();
